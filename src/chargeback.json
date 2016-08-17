@@ -3,6 +3,7 @@
   "name": "chargeback",
   "marker":{ "color" : "red"},
   "xaxis": "y1",
+  "fill": "tozeroy",
   "mode": "lines",
   "type": "scatter"
 }

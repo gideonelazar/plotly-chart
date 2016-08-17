@@ -27,19 +27,29 @@ let layout = {
     yaxis2: {
         showline: false,
         showgrid: false,
-        // fixedrange: true,
+        //fixedrange: true,
         titlefont: {color: '#1f77b4'},
         tickfont: {color: '#1f77b4'},
         overlaying: 'y',
         side: 'right'
     },
     xaxis: {
-        // fixedrange: true,
+        fixedrange: true,
         showline: false,
         showgrid: false,                  // remove the x-axis grid lines
         tickformat: "%d %B"              // customize the date format to "month, day"
     }
 };
+
+function stackedArea(traces) {
+    for (let i = 1; i < traces.length; i++) {
+        for (var j = 0; j < (Math.min(traces[i]['y'].length, traces[i - 1]['y'].length)); j++) {
+            traces[i]['y'][j] += traces[i - 1]['y'][j];
+        }
+    }
+    return traces;
+}
+
 //https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js#L22-L86
 let settings = {
     displayModeBar: false,
@@ -47,6 +57,6 @@ let settings = {
     showTips: false
 };
 
-Plotly.newPlot('myDiv', data, layout, settings);
+Plotly.newPlot('myDiv', stackedArea(data), layout, settings);
 
 
