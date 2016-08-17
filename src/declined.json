@@ -1,0 +1,10 @@
+{
+  "name": "decline",
+  "line": { "width": 1,"shape": "spline", "smoothing": 0.3},
+  "yaxis": "x2",
+  "mode": "lines",
+  "type": "scatter",
+  "marker":{ "color" : "blue"},
+  "fill": "tozeroy",
+  "opacity": 0.9
+}

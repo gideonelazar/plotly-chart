@@ -1,0 +1,11 @@
+{
+  "line": { "width": 1,"shape": "spline", "smoothing": 0.3},
+  "xaxis": "x1",
+  "name": "approved",
+  "mode": "lines",
+  "type": "scatter",
+  "marker":{ "color" : "gray"},
+  "fill": "tozeroy",
+  "opacity": 0.9,
+  "color":"yellow"
+}

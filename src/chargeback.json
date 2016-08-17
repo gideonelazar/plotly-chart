@@ -1,0 +1,8 @@
+{
+  "line": { "width": 1,"shape": "spline", "smoothing": 0.3},
+  "name": "chargeback",
+  "marker":{ "color" : "red"},
+  "xaxis": "y1",
+  "mode": "lines",
+  "type": "scatter"
+}
