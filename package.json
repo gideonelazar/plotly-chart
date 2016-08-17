@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "dygraphs": "^1.1.1",
-    "ify-loader": "^1.0.3"
+    "ify-loader": "^1.0.3",
+    "plotly.js": "^1.16.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
